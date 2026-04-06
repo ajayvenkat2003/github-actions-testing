@@ -8,11 +8,10 @@ jobs:
     runs-on : ubuntu-latest
     steps:
       - name : checkout
-        uses : actions/checkout@v2
+        uses : actions/checkout@v6
       - name : install dependency
         run  : |
-          - pip install --upgrade python 
-          - pip install --upgrade pytest
+          pip install --upgrade pytest
       - name : run test
         run : pytest
 
