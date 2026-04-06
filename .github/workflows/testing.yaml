@@ -11,8 +11,7 @@ jobs:
         uses : actions/checkout@v6
       - name : install dependency
         run  : |
-          - pip install --upgrade python 
-          - pip install --upgrade pytest
+          pip install --upgrade pytest
       - name : run test
         run : pytest
 
