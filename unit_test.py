@@ -1,5 +1,5 @@
 from src.data_preprocessing import add,sub
-def addTest():
+def test_add():
     assert add(1,2)==3
-def subTest():
+def test_sub():
     assert sub(2,1)==1
