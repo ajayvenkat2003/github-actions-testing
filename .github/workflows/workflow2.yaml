@@ -1,0 +1,12 @@
+name: 'workflow2'
+on:
+  issues:
+    types: opened
+jobs:
+  print:
+    runs-on: ubuntu-slim
+    steps:
+      - name: first
+        run: "echo hello world"
+      
+    
